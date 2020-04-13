@@ -1,0 +1,21 @@
+# All/For in this.App module..
+
+1. add app_name to settings.py in 'Installed APPS'
+2. Define a Model in models.py
+3. python manage.py migrate
+4. python manage.py makemigrations
+5. ( now Django understands the format of the Model
+        - what to keep
+        - how to keep
+        - where to keep (media)
+   )
+6. python manage.py createsuperuser
+    - add user name
+        -   pass
+7. edit settings.py to add global media route
+    (MEDIA_ROOT = os.path.join(BASE_DIR, 'media') )
+    - foams a global media folder and keeps all files separatly there.
+8. add MEDIA_URL in settings.py
+    - to access media via clicking on links
+9. add urlspattern in urls.py
+    urlpatterns += static()
