@@ -2,19 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3192d50a-d82c-46c4-8ec8-efc67b719d46" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/portfolio_app/images/iu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio_app/learning.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio_app/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog_app/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog_app/templates/blog_app/blogshomev1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog_app/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/blog_app/images/1e1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/blog_app/images/a1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/portfolio_app/images/82831019_2571965492857233_6562496594183192576_n.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio_app/templates/portfolio_app/home_v1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/personal_portfolio/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/personal_portfolio/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog_app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog_app/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/personal_portfolio/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/personal_portfolio/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio_app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio_app/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_app/learning.txt" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio_app/learning.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio_app/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -30,6 +46,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
   <component name="SvnConfiguration">
@@ -53,5 +70,9 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1586766458128" />
+    <state x="241" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1586804005799">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="241" y="257" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1586804005799" />
   </component>
 </project>
