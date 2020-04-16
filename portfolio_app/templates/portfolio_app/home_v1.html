@@ -1,6 +1,11 @@
 
 <h1> this is homepage v1</h1>
 
+{% load static %}
+<img src="{% static 'portfolio_app/testimage.png' %}" />
+<a  href="{% static 'portfolio_app/bilal-CV_OpenCVxyzV7.pdf' %}">Resume</a>
+
+
 <!-- {{ projects }} -->
 {% for i in projects %}
 <!-- {{ i }} -->

@@ -31,3 +31,6 @@ urlpatterns = [
 ]
 # to upload Media to a global root/media folder
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+# # to load static media
+# urlpatterns += static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS)

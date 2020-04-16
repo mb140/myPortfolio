@@ -28,6 +28,8 @@
 12. modify homepage.html
         - receive projects list from views file
         {% for i in listOfValues %}
+13. add static images in app:
+        - in app_name folder make static/app_name
 
 [to reset migrations
     rm  your_app/migrations/*
