@@ -28,3 +28,17 @@
 12. modify homepage.html
         - receive projects list from views file
         {% for i in listOfValues %}
+
+[to reset migrations
+    rm  your_app/migrations/*
+
+    rm db.sqlite3
+    python manage.py makemigrations
+    python manage.py migrate
+    ]
+
+[if makemigrations - No changes detected
+    python manage.py makemigrations <blog_app>>> app_name
+    python manage.py migrate blog_app <blog_app>>> app_name
+    ]
+
