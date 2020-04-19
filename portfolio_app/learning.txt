@@ -31,6 +31,10 @@
 13. add static images in app:
         - in app_name folder make static/app_name
 
+14. href links to new pages with specific number/id (Dynamic)
+    see blog_app
+        -
+
 [to reset migrations
     rm  your_app/migrations/*
 

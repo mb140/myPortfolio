@@ -2,8 +2,24 @@
 <h1> this is homepage v1</h1>
 
 {% for i in blogs %}
+<a href="{% url 'blog_app:detail' i.id %}"><h2>{{ i.title }}</h2> </a>
+<h5>{{ i.date }}</h5>
+<p>{{ i.description }}</p>
+
+{% endfor %}
+
+
+<!-- without adding *links* to blogs
+{% for i in blogs %}
 <h2>{{ i.title }}</h2>
 <h5>{{ i.date }}</h5>
 <p>{{ i.description }}</p>
 
 {% endfor %}
+ -->
+
+<!-- Explained href link to details
+    href { url-to-Go '[app_name]:nickname-of-Dynamic-url' (int)id
+    ## [app_name]: can be skipped but used for Certainty
+    ## otherwise django can get Confuse between same dynamic pages of multiple apps
+-->
