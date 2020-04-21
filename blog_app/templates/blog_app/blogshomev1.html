@@ -1,4 +1,8 @@
 
+{% extends 'portfolio_app/base.html' %}
+    {% block myblockcontent %}
+
+
 <h1> this is homepage v1</h1>
 
 <!--3 <h2> Total blogs: {{ blogs.count }} </h2> -->
@@ -13,6 +17,9 @@
 <!--5(simple) <p>{{ i.description }}</p> -->
 
 {% endfor %}
+
+
+    {% endblock %}
 
 
 <!--1 without adding *links* to blogs

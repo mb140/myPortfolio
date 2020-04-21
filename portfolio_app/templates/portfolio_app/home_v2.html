@@ -1,5 +1,9 @@
 
-<h1> this is homepage v1</h1>
+
+{% extends 'portfolio_app/base.html' %}
+    {% block myblockcontent %}
+
+<h1> this is homepage v2</h1>
 
 {% load static %}
 
@@ -8,8 +12,10 @@
       url '[app_name]:[nickname/Alis of target page]' -->
 <br>
 
-<img src="{% static 'portfolio_app/testimage.png' %}" />
+
 <a  href="{% static 'portfolio_app/bilal-CV_OpenCVxyzV7.pdf' %}">Resume</a>
+<br>
+<img src="{% static 'portfolio_app/testimage.png' %}" />
 
 
 <!--1 {{ projects }} -->
@@ -25,3 +31,6 @@
 {% endif %}
 
 {% endfor %}
+
+    {% endblock %}
+
