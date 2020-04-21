@@ -1,10 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+
+<h1> this is homepage v1</h1>
+
+{% load static %}
+
+<a href="{% url 'blog_app:all_blogs' %}">Blogs</a>
+<!--4 href to Other app in other folder..
+      url '[app_name]:[nickname/Alis of target page]' -->
+<br>
+
+<img src="{% static 'portfolio_app/testimage.png' %}" />
+<a  href="{% static 'portfolio_app/bilal-CV_OpenCVxyzV7.pdf' %}">Resume</a>
+
+
+<!--1 {{ projects }} -->
+{% for i in projects %}
+<!--2 {{ i }} -->
+<h2>{{ i.title }}</h2>
+<p>{{ i.description }}</p>
+<!--3 {{ i.image.url }} -->
+<img src="{{ i.image.url }}" height=400 width="400">
+
+{% if i.url %}
+<br><a href="{{ i.url }}">Link</a>
+{% endif %}
+
+{% endfor %}

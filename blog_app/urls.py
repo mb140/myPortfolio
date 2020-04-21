@@ -7,7 +7,7 @@ from . import views
 app_name = 'blog_app'
 urlpatterns = [
     ## So re-initialize(D) urls.py in blogs to handle different blog paths ||
-    ## ## blog Home ||
+    ## ## blog Home || nicknamed: all_blogs
     path('',views.all_blogs,name='all_blogs'),
     path('<int:blog_id>/', views.detail, name='detail'),
     #               detail = nickname of dynamic/ Specific blog calling

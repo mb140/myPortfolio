@@ -3,7 +3,8 @@ from .models import Blog
 
 def all_blogs(request):
     # bring newest 5 blogs
-    blogs = Blog.objects.order_by('-date')[:5]
+    # blogs = Blog.objects.order_by('-date')[:5]
+    blogs = Blog.objects.order_by('-date')
     return render(request, 'blog_app/blogshomev1.html', {'blogs':blogs}  )
 #   , {'blogs':blogs}
 

@@ -34,6 +34,12 @@
 14. href links to new pages with specific number/id (Dynamic)
     see blog_app
         -
+15. polish html views of blogs and their texts.
+        - | safe (to apply HTML tags to text field)
+        - | striptags (to hide HTML tags from main text
+
+16. reName the objects to their orignal Title.
+        - add __str__ method in model.py
 
 [to reset migrations
     rm  your_app/migrations/*

@@ -1,15 +1,21 @@
 
 <h1> this is homepage v1</h1>
 
+<!--3 <h2> Total blogs: {{ blogs.count }} </h2> -->
+<h2> Total blog{{ blogs.count| pluralize }}: {{ blogs.count }} </h2>
+
 {% for i in blogs %}
 <a href="{% url 'blog_app:detail' i.id %}"><h2>{{ i.title }}</h2> </a>
-<h5>{{ i.date }}</h5>
-<p>{{ i.description }}</p>
+<h5>{{ i.date |date:'M d Y'|upper }}</h5>
+<!--4(simple) <h5>{{ i.date }}</h5> -->
+
+<p>{{ i.description| safe| truncatechars:20 }}</p>
+<!--5(simple) <p>{{ i.description }}</p> -->
 
 {% endfor %}
 
 
-<!-- without adding *links* to blogs
+<!--1 without adding *links* to blogs
 {% for i in blogs %}
 <h2>{{ i.title }}</h2>
 <h5>{{ i.date }}</h5>
@@ -18,7 +24,7 @@
 {% endfor %}
  -->
 
-<!-- Explained href link to details
+<!--2 Explained href link to details
     href { url-to-Go '[app_name]:nickname-of-Dynamic-url' (int)id
     ## [app_name]: can be skipped but used for Certainty
     ## otherwise django can get Confuse between same dynamic pages of multiple apps

@@ -28,6 +28,8 @@ urlpatterns = [
     ## Forward All blog/ related stuff to the blog_app ||
     ## ## So re-initialize urls.py in blogs to handle different blog paths ||
     path('blog/',include('blog_app.urls')),
+
+    path('homev2/', views.homev2, name='homev2'),
 ]
 # to upload Media to a global root/media folder
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
